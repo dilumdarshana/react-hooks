@@ -1,10 +1,15 @@
-import React, { useContext } from "react";
-import CounterContext from "./../../contexts/couter";
+import React, { useContext } from 'react';
+import CounterContext from './../../contexts/counter';
 
 const Footer = () => {
-  const context = useContext(CounterContext);
+    const context = useContext(CounterContext);
 
-  return <h2>Footer {context.counter}</h2>;
+    return (
+        <div className="app-separator">
+            <p>My Counter {context.counter}</p>
+            <h2>[Footer]</h2>
+        </div>
+    );
 };
 
 export default Footer;

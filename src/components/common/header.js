@@ -1,7 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useCallback, useEffect } from 'react';
+import { withRouter } from 'react-router-dom';
 
-const Header = () => {
-  return <h2>Header</h2>;
+const Header = props => {
+    const doNavigate = useCallback(
+        path => {
+            props.history.push(path);
+        },
+        [props]
+    );
+
+    return (
+        <div className="app-separator">
+            <h2>WELCOME!</h2>
+            <nav className="navigation">
+                <ul>
+                    <li>
+                        <button onClick={() => doNavigate('/')}>Home</button>
+                    </li>
+                    <li>
+                        <button onClick={() => doNavigate('/users')}>Users</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    );
 };
 
-export default Header;
+export default withRouter(Header);
