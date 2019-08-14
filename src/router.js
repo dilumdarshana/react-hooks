@@ -7,6 +7,7 @@ import Header from './components/common/header';
 import Footer from './components/common/footer';
 import Home from './components/home';
 import Users from './components/users';
+import Form from './components/form';
 
 const router = () => (
     <BrowserRouter>
@@ -17,6 +18,7 @@ const router = () => (
                     <Switch>
                         <Route path="/" exact component={Home} />
                         <Route path="/users" exact component={Users} />
+                        <Route path="/form" exact component={Form} />
                     </Switch>
                     <Footer />
                 </Route>

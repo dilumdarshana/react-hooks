@@ -20,6 +20,9 @@ const Header = props => {
                     <li>
                         <button onClick={() => doNavigate('/users')}>Users</button>
                     </li>
+                    <li>
+                        <button onClick={() => doNavigate('/form')}>Form</button>
+                    </li>
                 </ul>
             </nav>
         </div>
