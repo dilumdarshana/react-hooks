@@ -8,3 +8,15 @@ Run
 ```bash
 yarn start
 ```
+
+Used terms
+
+-   Hooks
+
+    -   useState: Functional component state management
+    -   useReducer: Functional level reducer
+    -   useContext: Usage of context API
+    -   useCallback: Stop rebinding fuctions on re render
+    -   useEffect: Equivalent to component did mount
+
+-   Context API
