@@ -21,7 +21,7 @@ const Header = props => {
                         <button onClick={() => doNavigate('/users')}>Users</button>
                     </li>
                     <li>
-                        <button onClick={() => doNavigate('/form')}>Form</button>
+                        <button onClick={() => doNavigate('/form')}>Hooks</button>
                     </li>
                 </ul>
             </nav>

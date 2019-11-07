@@ -1,5 +1,6 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useContext, useEffect } from 'react';
 import { useForm } from '../hooks/useForm';
+import SiteDataContext from './../contexts/siteData';
 
 const Form = () => {
     const [values, handleChange] = useForm({
@@ -7,6 +8,11 @@ const Form = () => {
         lastName: '',
         email: ''
     });
+    const context = useContext(SiteDataContext);
+
+    useEffect(() => {
+        context.setPageTitle('Form');
+    }, [context]);
 
     const onSubmit = useCallback(() => {
         console.log('values', values);

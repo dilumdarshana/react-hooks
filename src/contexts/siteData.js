@@ -1,24 +1,22 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect } from 'react';
 
 const siteDataContext = createContext({});
 
 export const SiteDataProvider = props => {
-  const [title, setTitle] = useState("React Hooks Demo");
+    const [title, setTitle] = useState('React Hooks Demo');
 
-  const values = {
-    title,
-    setPageTitle: title => setTitle(title)
-  };
+    const values = {
+        title,
+        setPageTitle: title => setTitle(title)
+    };
 
-  useEffect(() => {
-    document.title = title;
-  }, [title]);
+    useEffect(() => {
+        document.title = title;
+    }, [title]);
 
-  return (
-    <siteDataContext.Provider value={values}>
-      {props.children}
-    </siteDataContext.Provider>
-  );
+    return <siteDataContext.Provider value={values}>{props.children}</siteDataContext.Provider>;
 };
+
+export const SiteDataConsumer = siteDataContext.Consumer;
 
 export default siteDataContext;

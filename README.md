@@ -11,12 +11,15 @@ yarn start
 
 Used terms
 
+- Parcel JS: For bundling
+
 -   Hooks
 
     -   useState: Functional component state management
     -   useReducer: Functional level reducer
     -   useContext: Usage of context API
-    -   useCallback: Stop rebinding fuctions on re render
+    -   useCallback: Stop rebinding functions on re render
     -   useEffect: Equivalent to component did mount
+    -   useRef: Can make reference to DOM elements
 
 -   Context API

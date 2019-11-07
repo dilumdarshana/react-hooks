@@ -8,6 +8,7 @@ import Footer from './components/common/footer';
 import Home from './components/home';
 import Users from './components/users';
 import Form from './components/form';
+import Play from './components/play';
 
 const router = () => (
     <BrowserRouter>
@@ -19,6 +20,7 @@ const router = () => (
                         <Route path="/" exact component={Home} />
                         <Route path="/users" exact component={Users} />
                         <Route path="/form" exact component={Form} />
+                        <Route path="/play" exact component={Play} />
                     </Switch>
                     <Footer />
                 </Route>

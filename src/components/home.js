@@ -2,21 +2,21 @@ import React, { useCallback, useReducer, useContext, useEffect } from 'react';
 import CouterContext from '../contexts/counter';
 import SiteDataContext from '../contexts/siteData';
 
-const Home = props => {
-    const initialStates = { count: 10 };
+const initialStates = { count: 10 };
 
-    // If use reducer, then no need to think of useEffect hook
-    const reducer = (state, action) => {
-        switch (action.type) {
-            case 'increment':
-                return { count: state.count + 1 };
-            case 'decrement':
-                return { count: state.count - 1 };
-            default:
-                throw new Error();
-        }
-    };
+// If use reducer, then no need to think of useEffect hook
+const reducer = (state, action) => {
+    switch (action.type) {
+        case 'increment':
+            return { count: state.count + 1 };
+        case 'decrement':
+            return { count: state.count - 1 };
+        default:
+            throw new Error();
+    }
+};
 
+const Home = () => {
     const counterContext = useContext(CouterContext);
     const siteDataContext = useContext(SiteDataContext);
     const [state, dispatch] = useReducer(reducer, initialStates);

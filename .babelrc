@@ -1,9 +1,23 @@
 {
     "presets": [
-        "env"
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": false,
+            }
+        ],
     ],
     "plugins": [
-        "@babel/plugin-transform-runtime"
+        "transform-runtime",
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-proposal-class-properties",
+        [
+            "transform-react-jsx",
+            {
+                "pragma": "React.createElement",
+                "pragmaFrag": "React.Fragment"
+            }
+        ]
     ],
     "parserOpts": {
         "plugins": [
