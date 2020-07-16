@@ -9,6 +9,17 @@ Run
 yarn start
 ```
 
+Build
+```bash
+yarn build
+```
+
+Production view
+```bash
+serve dist
+```
+Note: yarn global add serve 
+
 Used terms
 
 - Parcel JS: For bundling
@@ -23,3 +34,5 @@ Used terms
     -   useRef: Can make reference to DOM elements
 
 -   Context API
+
+- Error Boundaries

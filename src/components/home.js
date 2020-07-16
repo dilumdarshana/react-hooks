@@ -1,6 +1,8 @@
 import React, { useCallback, useReducer, useContext, useEffect } from 'react';
 import CouterContext from '../contexts/counter';
 import SiteDataContext from '../contexts/siteData';
+import ErrorDemo from './errorDemo';
+import ErrorBoundary from './errorBoundary';
 
 const initialStates = { count: 10 };
 
@@ -40,6 +42,9 @@ const Home = () => {
             <button className="btn-update-footer" onClick={clickMe}>
                 Update Footer
             </button>
+            <ErrorBoundary>
+                <ErrorDemo />
+            </ErrorBoundary>
         </div>
     );
 };
