@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ErrorDemo = () => {
     return (
         <div className="app-separator">

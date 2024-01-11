@@ -1,4 +1,4 @@
-import React, { useCallback, useReducer, useContext, useEffect } from 'react';
+import { useCallback, useReducer, useContext, useEffect } from 'react';
 import CouterContext from '../contexts/counter';
 import SiteDataContext from '../contexts/siteData';
 import ErrorDemo from './errorDemo';

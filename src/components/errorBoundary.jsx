@@ -8,13 +8,14 @@ class MyErrorBoundary extends Component {
 
     static getDerivedStateFromError(error) {
         // Update state so next render shows fallback UI.
-        return { error: error };
+        return { error };
     }
 
     componentDidCatch(error, info) {
         // Log the error to an error reporting service
         // logErrorToMyService(error, info);
-        // console.log('info', info)
+        console.log('Error', error);
+        console.log('Info', info);
     }
 
     render() {

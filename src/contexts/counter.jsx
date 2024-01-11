@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import { createContext, useState } from 'react';
 
 const CounterContext = createContext({
   counter: 0,
@@ -21,6 +21,5 @@ export const CounterProvider = props => {
     </CounterContext.Provider>
   );
 };
-// export const CounterConsumer = CounterContext.Consumer;
 
 export default CounterContext;

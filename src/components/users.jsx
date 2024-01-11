@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, Suspense } from 'react';
+import { useContext, useEffect, Suspense } from 'react';
 import SiteDataContext from '../contexts/siteData';
 import useFetch from '../hooks/useFetch';
 

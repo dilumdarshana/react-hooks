@@ -13,59 +13,52 @@ body {
   padding: 10px;
 }
 
-/* Header */
-
 /* Navgation */
 .navigation ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+}
 
-  li {
-      display: inline;
-      padding-right: 10px;
-
-      button {
-          background: none;
-          color: inherit;
-          border: none; 
-          padding: 0;
-          font: inherit;
-          cursor: pointer;
-      }
-      button:hover {
-          color: blue;
-      }
-  }
+.navigation ul li {
+  padding-right: 20px;
 }
 
 /* Users */
 .users-wrap {
   padding: 10px;
-  .users {
-      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-      td, th {
-          border: 1px solid #ddd;
-          padding: 8px;
-        }
-      tr:nth-child(even){background-color: #f2f2f2;}
-      tr:hover {background-color: #ddd;}
-  }
 }
 
-/* Home */
-.home-wrap {
-  p button {
-      margin-left: 10px;
-  }
+.users-wrap .users {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-  .btn-update-footer {
-      width: 200px;
-      background-color: gray;
-      cursor: pointer;
-  }
+.users-wrap .users td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.users-wrap .users tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.users-wrap .users tr:hover {
+  background-color: #ddd;
+}
+
+
+/* Home */
+.home-wrap .btn-update-footer {
+  width: 200px;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.home-wrap p button {
+  margin-left: 10px;
 }
 
 /* Form */
