@@ -9,6 +9,8 @@ import Users from './components/users';
 import Form from './components/form';
 import Play from './components/play';
 import Transition from './components/transition';
+import Debounce from './components/debounce';
+import LocalStorage from './components/localStorage';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -23,6 +25,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                   <Route path="/form" exact element={<Form />} />
                   <Route path="/play" exact element={<Play />} />
                   <Route path="/transition" exact element={<Transition />} />
+                  <Route path="/debounce" exact element={<Debounce />} />
+                  <Route path="/localstorage" exact element={<LocalStorage />} />
                 </Route>
               </Routes>
             </CounterProvider>

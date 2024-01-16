@@ -33,6 +33,11 @@ Used tech terms
     -   useRef: Can make reference to DOM elements
     -   useTransition: Can make expensive executions low priority
     -   useDeferredValue: Replication for debounce
+    
+-   Custom hooks
+    - useFetch
+    - useForm
+    - useLocalStorage
 
 -   Context API
 

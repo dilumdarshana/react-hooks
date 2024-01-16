@@ -21,6 +21,12 @@ const Header = () => {
                     <li>
                         <Link to="/transition">Transition</Link>
                     </li>
+                    <li>
+                        <Link to="/debounce">Debounce</Link>
+                    </li>
+                    <li>
+                        <Link to="/localstorage">LocalStorage</Link>
+                    </li>
                 </ul>
             </nav>
         </div>
