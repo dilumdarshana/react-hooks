@@ -20,18 +20,19 @@ serve dist
 ```
 Note: yarn global add serve 
 
-Used terms
+Used tech terms
 
-- Parcel JS: For bundling
+- Vite: To generate projet skeliton
 
 -   Hooks
-
     -   useState: Functional component state management
     -   useReducer: Functional level reducer
     -   useContext: Usage of context API
     -   useCallback: Stop rebinding functions on re render
     -   useEffect: Equivalent to component did mount
     -   useRef: Can make reference to DOM elements
+    -   useTransition: Can make expensive executions low priority
+    -   useDeferredValue: Replication for debounce
 
 -   Context API
 
