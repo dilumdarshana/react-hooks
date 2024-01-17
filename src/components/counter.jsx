@@ -1,5 +1,5 @@
-const Counter = () => {
+const Counteree = () => {
   return <p>Counter is</p>;
 };
 
-export default Counter;
+export default Countere;

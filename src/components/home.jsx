@@ -42,7 +42,7 @@ const Home = () => {
             <button className="btn-update-footer" onClick={clickMe}>
                 Update Footer
             </button>
-            <ErrorBoundary>
+            <ErrorBoundary fallback={<p><i>Something broken. Captured by Error Boundaries</i></p>}>
                 <ErrorDemo />
             </ErrorBoundary>
         </div>

@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 class MyErrorBoundary extends Component {
     state = {
         error: null,
-        errorInfo: null,
+        hasError: false,
     };
 
     static getDerivedStateFromError(error) {
         // Update state so next render shows fallback UI.
-        return { error };
+        return { error, hasError: true };
     }
 
     componentDidCatch(error, info) {
@@ -19,9 +19,9 @@ class MyErrorBoundary extends Component {
     }
 
     render() {
-        if (this.state.error) {
+        if (this.state.hasError) {
             // You can render any custom fallback UI
-            return <p><i>Something broken. Captured by Error Boundaries</i></p>;
+            return this.props.fallback;
         }
         return this.props.children;
     }

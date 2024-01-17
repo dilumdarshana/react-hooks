@@ -30,7 +30,7 @@ Used tech terms
     -   useContext: Usage of context API
     -   useCallback: Stop rebinding functions on re render
     -   useEffect: Equivalent to component did mount
-    -   useRef: Can make reference to DOM elements
+    -   useRef: Can make reference to DOM elements without HTML query selector like document.getElementById(..)
     -   useTransition: Can make expensive executions low priority
     -   useDeferredValue: Replication for debounce
     
@@ -39,6 +39,12 @@ Used tech terms
     - useForm
     - useLocalStorage
 
+-   Experimental hooks
+    - use
+
 -   Context API
 
-- Error Boundaries
+-   Error Boundaries
+
+-   Other terms
+    - Suspense: Use with asynchorinous calls to show something like 'loading...' state. Work inside conditions and loops unlike other hooks
