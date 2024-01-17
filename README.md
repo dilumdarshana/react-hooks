@@ -33,6 +33,7 @@ Used tech terms
     -   useRef: Can make reference to DOM elements without HTML query selector like document.getElementById(..)
     -   useTransition: Can make expensive executions low priority
     -   useDeferredValue: Replication for debounce
+    -   useId: To generate random ID
     
 -   Custom hooks
     - useFetch
@@ -40,7 +41,7 @@ Used tech terms
     - useLocalStorage
 
 -   Experimental hooks
-    - use
+    - use: To handle promises, contexts, etc
 
 -   Context API
 

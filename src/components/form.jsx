@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useEffect } from 'react';
+import React, { useCallback, useContext, useEffect, useId } from 'react';
 import { useForm } from '../hooks/useForm';
 import SiteDataContext from '../contexts/siteData';
 
@@ -9,6 +9,7 @@ const Form = () => {
         email: ''
     });
     const context = useContext(SiteDataContext);
+    const randomId = useId()
 
     useEffect(() => {
         context.setPageTitle('Form');
@@ -21,12 +22,12 @@ const Form = () => {
     return (
         <div className="app-separator home-wrap">
             <form>
-                <label htmlFor="fname">First Name</label>
+                <label htmlFor={randomId}>First Name</label>
                 <input
                     type="text"
                     onChange={handleChange}
                     value={values.firstName}
-                    id="fname"
+                    id={randomId}
                     name="firstName"
                     placeholder="Your name.."
                 />
